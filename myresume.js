@@ -18,7 +18,7 @@ var shakti;
 var shakti_cup;
 var shakti2;
 var text;
-var resume_url = "https://drive.google.com/file/d/1B27VCJmOewie1-vciyzimB0rUyNboSvr/view?usp=sharing";
+var resume_url = "https://drive.google.com/file/d/1nwZ-jLU5kzjUojwQ_2JKbCA1Km_1vL27/view?usp=sharing";
 var proj1 = "https://github.com/iamarkaj/Identify-the-Sentiments";
 var proj3 = "https://drive.google.com/file/d/1Efyr00SslMtTd-A2DKQtIe9XqgMVwUv8/view";
 var proj4 = "https://drive.google.com/file/d/1x_Whv4Z-OPRotu81RvUo0t4oQo0LZZj8/view";
