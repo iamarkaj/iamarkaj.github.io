@@ -10,19 +10,14 @@ var plant1;
 var tree_palm;
 var ct1, ct2, ct3, ct4;
 var bulletTime = 0;
-var ctext, pythontext, javatext, jstext;
+var ctext, pythontext, cpptext, jstext;
 var birds;
 var bird;
-var bubble;
 var shakti;
 var shakti_cup;
 var shakti2;
 var text;
 var resume_url = "https://drive.google.com/file/d/1nwZ-jLU5kzjUojwQ_2JKbCA1Km_1vL27/view?usp=sharing";
-var proj1 = "https://github.com/iamarkaj/Identify-the-Sentiments";
-var proj3 = "https://drive.google.com/file/d/1Efyr00SslMtTd-A2DKQtIe9XqgMVwUv8/view";
-var proj4 = "https://drive.google.com/file/d/1x_Whv4Z-OPRotu81RvUo0t4oQo0LZZj8/view";
-var proj5 = "https://drive.google.com/file/d/1UWEnFVSdgSInlOSTcfC9JWPyvUDtH_Tf/view";
 var inst_text;
 var bug;
 var bug_tween;
@@ -93,29 +88,18 @@ function preload() {
   game.load.image("tiet_logo", "assets/tiet.png");
   game.load.image("level", "assets/sign.png");
   game.load.image("cocotree", "assets/coco.png");
-  game.load.image("flask", "assets/flask.png");
-  game.load.image("css", "assets/matlab.png");
-  game.load.image("mysql", "assets/pandas.png");
-  game.load.image("html", "assets/ansys.png");
+  game.load.image("party", "assets/party.png");
   game.load.image("night", "assets/night.jpg");
-  game.load.image("developer", "assets/fullstackS.png");
-  game.load.image("ds_power", "assets/ds_power.png");
   game.load.image("frog", "assets/frog.png");
   game.load.image("git", "assets/git.png");
-  game.load.image("vsbubble", "assets/vsbubble.png");
-  game.load.image("traffic", "assets/sentiments.jpg");
-  game.load.image("movie", "assets/4barpush.png");
   game.load.image("scroll_2015", "assets/scroll_2015.png");
   game.load.image("scroll_2017", "assets/scroll_2017.png");
   game.load.image("c", "assets/javalogo.png");
   game.load.image("python_logo", "assets/python.png");
-  game.load.image("js_logo", "assets/tf.png");
-  game.load.image("java_logo", "assets/creo.png");
-  game.load.image("caption", "assets/robocar.jpg");
-  game.load.image("ar", "assets/bottle.png");
+  game.load.image("cpp_logo", "assets/cpp.png");
+  game.load.image("chash_logo", "assets/chash.png");
   game.load.image("bullet", "assets/bullet.png");
   game.load.image("cup", "assets/cup.png");
-  game.load.image("iot", "assets/iot.png");
   game.load.image("algae", "assets/algae-b.png");
   game.load.image("bug", "assets/bug.png");
   game.load.image("Thanks", "assets/Thanks.png");
@@ -144,11 +128,7 @@ function preload() {
     "assets/coin-sprite.png",
     "assets/coin-sprite-map.json"
   );
-  game.load.atlasJSONHash(
-    "digital_india",
-    "assets/digital_india.png",
-    "assets/digital_india.json"
-  );
+
   game.load.image("waterBubble", "assets/bubble256.png");
   game.load.image("sun", "assets/sun.png");
   game.load.atlasXML(
@@ -158,6 +138,7 @@ function preload() {
   );
   game.load.spritesheet("kaboom", "assets/explode.png", 128, 128);
 }
+
 function create() {
   //Add Clouds
   for (var i = 0; i < 15000; i += 1000) {
@@ -233,11 +214,11 @@ function create() {
     fill: "#fff",
   };
 
-  javatext = game.add.sprite(5240, h - 490, "js_logo");
+  cpptext = game.add.sprite(5240, h - 490, "cpp_logo");
   pythontext = game.add.sprite(5625, h - 490, "python_logo");
-  jstext = game.add.sprite(5057, h - 355, "java_logo");
+  jstext = game.add.sprite(5057, h - 355, "chash_logo");
   ctext = game.add.sprite(5480, h - 480, "c");
-  javatext.alpha = 0.2;
+  cpptext.alpha = 0.2;
   pythontext.alpha = 0.2;
   jstext.alpha = 0.2;
   ctext.alpha = 0.2;
@@ -402,13 +383,6 @@ function create() {
     font: "25px Arial Black",
   });
 
-  tree_palm = game.add.sprite(11580, h - 710, "tree_palm");
-  game.add.sprite(11800, h - 440, "level");
-  game.add.text(11870, h - 340, "Level 4");
-  game.add.text(11940, h - 260, "Projects", {
-    font: "25px Arial Black",
-  });
-
   game.add.sprite(10200, h - 420, "tree1").scale.setTo(0.75, 0.75);
 
   //Add frog
@@ -427,9 +401,8 @@ function create() {
   }
 
   game.add.sprite(10000, h - 450, "frog").scale.setTo(1.2, 1.2);
-  game.add.sprite(10500, h - 360, "frog").scale.setTo(0.9, 0.9);
+  game.add.sprite(10500, h - 450, "frog").scale.setTo(1.2, 1.2);
 
-  //Add logos
   game.add.sprite(10010, h - 260, "dassault").scale.setTo(0.75, 0.75);
 
   //Add company texts.
@@ -450,42 +423,12 @@ function create() {
     style_exS
   );
   game.add.text(
-    10525,
-    h - 220,
+    10565,
+    h - 270,
     "Freelance \n Natural Language Processing \n Engineer",
     style_exS
   );
 
-  //Add projects
-  button_traffic = game.add.button(
-    12200,
-    h - 290,
-    "traffic",
-    openproj1,
-    this
-  );
-
-  button_caption = game.add.button(
-    13350,
-    h - 330,
-    "caption",
-    openproj3,
-    this
-  );
-  button_ar = game.add.button(
-    13605,
-    h - 380,
-    "ar",
-    openproj4,
-    this
-  );
-  button_movie = game.add.button(
-    14000,
-    h - 360,
-    "movie",
-    openproj5,
-    this
-  );
 
   //Positon style
   var style_position = {
@@ -501,20 +444,12 @@ function create() {
   var scroll_2015 = game.add.sprite(3250, h - 747, "scroll_2015");
   var scroll_2017 = game.add.sprite(3650, h - 747, "scroll_2017");
 
-  //Add fullstack
-  game.add.sprite(5900, h - 380, "developer");
 
   //Add College building
   game.add.sprite(4000, h - 405, "thapar").scale.setTo(0.9, 0.9);
   aieee_cup = game.add.sprite(3500, -500, "cup");
   game.add.text(4050, h - 127, "  THAPAR UNIVERSITY (2018-2022)", style_roboto1);
 
-  //Add bubble
-
-  bubble = game.add.sprite(9100, h + 450, "vsbubble");
-
-  bubble.scale.setTo(0.5, 0.5);
-  bubble.alpha = 0.8;
 
   inst_text = game.add.text(
     290,
@@ -708,11 +643,11 @@ function collisionHandler(bullet, tile) {
   var bv = 7275;
   var inc = 119 * 2;
   if (explosion_count == 1) {
-    var css = game.add.sprite(bv, h - 400, "css");
-    css.scale.setTo(0.5, 0.5);
-    css.anchor.setTo(0.5, 0.5);
+    var party = game.add.sprite(bv, h - 400, "party");
+    party.scale.setTo(0.5, 0.5);
+    party.anchor.setTo(0.5, 0.5);
     game.add
-      .tween(css)
+      .tween(party)
       .to(
         {
           y: h - 550,
@@ -721,7 +656,7 @@ function collisionHandler(bullet, tile) {
       )
       .start();
     game.add
-      .tween(css.scale)
+      .tween(party.scale)
       .to(
         {
           y: 0.9,
@@ -745,11 +680,11 @@ function collisionHandler(bullet, tile) {
       coin.alpha = 0;
     });
   } else if (explosion_count == 2) {
-    var html = game.add.sprite(bv + 1 * inc, h - 500, "html");
-    html.scale.setTo(0.5, 0.5);
-    html.anchor.setTo(0.5, 0.5);
+    var party = game.add.sprite(bv + 1 * inc, h - 500, "party");
+    party.scale.setTo(0.5, 0.5);
+    party.anchor.setTo(0.5, 0.5);
     game.add
-      .tween(html)
+      .tween(party)
       .to(
         {
           y: h - 550,
@@ -758,7 +693,7 @@ function collisionHandler(bullet, tile) {
       )
       .start();
     game.add
-      .tween(html.scale)
+      .tween(party.scale)
       .to(
         {
           y: 0.9,
@@ -782,7 +717,7 @@ function collisionHandler(bullet, tile) {
       coin.alpha = 0;
     });
   } else if (explosion_count == 3) {
-    var js = game.add.sprite(bv + 2 * inc, h - 500, "mysql");
+    var js = game.add.sprite(bv + 2 * inc, h - 500, "party");
     js.scale.setTo(0.5, 0.5);
     js.anchor.setTo(0.5, 0.5);
     game.add
@@ -820,8 +755,8 @@ function collisionHandler(bullet, tile) {
       coin.alpha = 0;
     });
   } else if (explosion_count == 4) {
-    var py = game.add.sprite(bv + 3 * inc, h - 500, "flask");
-    py.scale.setTo(0.2, 0.2);
+    var py = game.add.sprite(bv + 3 * inc, h - 500, "party");
+    py.scale.setTo(0.5, 0.5);
     py.anchor.setTo(0.5, 0.5);
     game.add
       .tween(py)
@@ -836,8 +771,8 @@ function collisionHandler(bullet, tile) {
       .tween(py.scale)
       .to(
         {
-          y: 0.6,
-          x: 0.6,
+          y: 0.9,
+          x: 0.9,
         },
         500
       )
@@ -859,8 +794,8 @@ function collisionHandler(bullet, tile) {
     });
   } else if (explosion_count == 5) {
 
-    var andro = game.add.sprite(bv + 4 * inc + 50, h - 500, "ds_power");
-    andro.scale.setTo(0.2, 0.2);
+    var andro = game.add.sprite(bv + 4 * inc, h - 500, "party");
+    andro.scale.setTo(0.5, 0.5);
     andro.anchor.setTo(0.5, 0.5);
     game.add
       .tween(andro)
@@ -875,8 +810,8 @@ function collisionHandler(bullet, tile) {
       .tween(andro.scale)
       .to(
         {
-          y: 0.6,
-          x: 0.6,
+          y: 0.9,
+          x: 0.9,
         },
         600
       )
@@ -1099,7 +1034,6 @@ function update() {
       birds.alpha = 1;
       game.camera.y -= 150;
     });
-    //console.log("Nahin Yeh Vaala")
   }
 
   if (hero.x >= 12500 && hero.x <= 12650 && forwardButtonPressed()) {
@@ -1219,9 +1153,6 @@ function update() {
       .start();
     birds.alpha = 0;
     hero.alpha = 0.6;
-    bubble.scale.setTo(0.5, 0.5);
-    bubble.anchor.setTo(0.5, 0.5);
-    animateBubble();
   }
 
   if (hero.x > 9250 && hero.x < 9300 && hero.y > h && direction != "left") {
@@ -1245,12 +1176,6 @@ function update() {
   if (hero.x >= 7100 && hero.x <= 8200) {
     fireBullet();
   }
-}
-
-function animateBubble() {
-  bubble.scale.setTo(0.75, 0.75);
-  game.physics.enable(bubble, Phaser.Physics.ARCADE);
-  bubble.body.angularVelocity = 100;
 }
 
 function moveBugLeft() {
@@ -1364,7 +1289,7 @@ function fadeText() {
     )
     .start();
   game.add
-    .tween(javatext)
+    .tween(cpptext)
     .to(
       {
         alpha: 1,
@@ -1409,19 +1334,4 @@ function openResume() {
   var win = window.open(resume_url);
   win.focus();
 }
-function openproj1() {
-  var win = window.open(proj1);
-  win.focus();
-}
-function openproj3() {
-  var win = window.open(proj3);
-  win.focus();
-}
-function openproj4() {
-  var win = window.open(proj4);
-  win.focus();
-}
-function openproj5() {
-  var win = window.open(proj5);
-  win.focus();
-}
+
