@@ -89,7 +89,7 @@ function preload() {
   game.load.image("level", "assets/sign.png");
   game.load.image("cocotree", "assets/coco.png");
   game.load.image("party", "assets/party.png");
-  game.load.image("night", "assets/night.gif");
+  game.load.image("night", "assets/night.jpg");
   game.load.image("frog", "assets/frog.png");
   game.load.image("git", "assets/git.png");
   game.load.image("scroll_2015", "assets/scroll_2015.png");
