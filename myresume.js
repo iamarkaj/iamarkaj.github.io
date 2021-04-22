@@ -12,7 +12,6 @@ var ct1, ct2, ct3, ct4;
 var bulletTime = 0;
 var ctext, pythontext, cpptext, jstext;
 var birds;
-var bird;
 var shakti;
 var shakti_cup;
 var shakti2;
@@ -78,7 +77,6 @@ function preload() {
   game.load.image("dassault", "assets/dassault.png");
   game.load.image("cloud", "assets/cloud.png");
   game.load.image("birds", "assets/birds.png");
-  game.load.image("bird", "assets/bird.png");
   game.load.image("school", "assets/school.png");
   game.load.image("mainbanner", "assets/main-banner.png");
   game.load.image("building", "assets/building.png");
