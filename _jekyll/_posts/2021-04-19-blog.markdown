@@ -5,6 +5,6 @@ date:   2021-04-19
 categories: jekyll update
 ---
 
-**Note** If you are reading this and if you have any good article to share, please send them at my email address.
-
 **2021-04-19** Read this [article](https://www.mdpi.com/2079-9292/9/12/2163/htm)
+
+**2021-04-21** Finished [this](https://www.youtube.com/playlist?list=PLy9nLDKxDN683GqAiJ4IVLquYBod_2oA6)
