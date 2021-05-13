@@ -16,7 +16,6 @@ var shakti;
 var shakti_cup;
 var shakti2;
 var text;
-var resume_url = "https://drive.google.com/file/d/1nwZ-jLU5kzjUojwQ_2JKbCA1Km_1vL27/view?usp=sharing";
 var inst_text;
 var bug;
 var bug_tween;
@@ -45,8 +44,8 @@ var style_roboto = {
   align: "center",
 };
 var style_roboto1 = {
-  font: "34px Roboto",
-  fill: "#00000",
+  font: "38px Roboto",
+  fill: "#FFF",
   align: "center",
 };
 var game = new Phaser.Game(w, h, Phaser.CANVAS, "canvas", {
@@ -64,7 +63,6 @@ function preload() {
     "",
   );
   text.anchor.setTo(0.5, 0.5);
-  game.load.image("download", "assets/download2.png");
   game.load.image("ground", "assets/ground.png");
   game.load.image("back", "assets/back64.png");
   game.load.image("grass", "assets/grass.png");
@@ -86,7 +84,6 @@ function preload() {
   game.load.image("tiet_logo", "assets/tiet.png");
   game.load.image("level", "assets/sign.png");
   game.load.image("cocotree", "assets/coco.png");
-  game.load.image("party", "assets/party.png");
   game.load.image("night", "assets/night.jpg");
   game.load.image("frog", "assets/frog.png");
   game.load.image("git", "assets/git.png");
@@ -438,9 +435,9 @@ function create() {
 
 
   //Add College building
-  game.add.sprite(4000, h - 405, "thapar").scale.setTo(0.9, 0.9);
+  game.add.sprite(4000, h - 390, "thapar").scale.setTo(0.9, 0.9);
   aieee_cup = game.add.sprite(3500, -500, "cup");
-  game.add.text(4050, h - 127, "  THAPAR UNIVERSITY (2018-2022)", style_roboto1);
+  game.add.text(3970, h - 432, "  THAPAR UNIVERSITY (2018-2022)", style_roboto1);
 
 
   inst_text = game.add.text(
@@ -561,7 +558,7 @@ function create() {
   var school = game.add.sprite(2600, h - 415, "school");
   school.scale.setTo(1.0,1.0);
 
-  var clg = game.add.sprite(4150, h - 600, "tiet_logo");
+  var clg = game.add.sprite(4150, h - 640, "tiet_logo");
   clg.scale.setTo(0.6, 0.6);
 
   //  hero tween
@@ -594,12 +591,6 @@ function create() {
   fwd_btn.fixedToCamera = true;
   back_btn.fixedToCamera = true;
   back_btn.alpha = 1;
-  download_btn = game.add.button(w - 150, 5, "download", openResume, this);
-  download_btn.fixedToCamera = true;
-  game.add.text(w - 120, 100, "Download PDF", {
-    font: "10px Roboto",
-    fill: "#000",
-  }).fixedToCamera = true;
   night_tween = game.add.tween(night);
   night_tween.to(
     {
@@ -634,195 +625,6 @@ function collisionHandler(bullet, tile) {
   bullet.kill();
   var bv = 7275;
   var inc = 119 * 2;
-  if (explosion_count == 1) {
-    var party = game.add.sprite(bv, h - 400, "party");
-    party.scale.setTo(0.5, 0.5);
-    party.anchor.setTo(0.5, 0.5);
-    game.add
-      .tween(party)
-      .to(
-        {
-          y: h - 550,
-        },
-        300
-      )
-      .start();
-    game.add
-      .tween(party.scale)
-      .to(
-        {
-          y: 0.9,
-          x: 0.9,
-        },
-        500
-      )
-      .start();
-    var coin = addMovingCoin(bv, h - 400, 2);
-    var t = game.add
-      .tween(coin)
-      .to(
-        {
-          x: hero.x + 100,
-          y: hero.y + 50,
-        },
-        500
-      )
-      .start();
-    t.onComplete.add(function () {
-      coin.alpha = 0;
-    });
-  } else if (explosion_count == 2) {
-    var party = game.add.sprite(bv + 1 * inc, h - 500, "party");
-    party.scale.setTo(0.5, 0.5);
-    party.anchor.setTo(0.5, 0.5);
-    game.add
-      .tween(party)
-      .to(
-        {
-          y: h - 550,
-        },
-        300
-      )
-      .start();
-    game.add
-      .tween(party.scale)
-      .to(
-        {
-          y: 0.9,
-          x: 0.9,
-        },
-        500
-      )
-      .start();
-    var coin = addMovingCoin(bv + inc, h - 400, 2);
-    var t = game.add
-      .tween(coin)
-      .to(
-        {
-          x: hero.x + 100,
-          y: hero.y + 50,
-        },
-        500
-      )
-      .start();
-    t.onComplete.add(function () {
-      coin.alpha = 0;
-    });
-  } else if (explosion_count == 3) {
-    var js = game.add.sprite(bv + 2 * inc, h - 500, "party");
-    js.scale.setTo(0.5, 0.5);
-    js.anchor.setTo(0.5, 0.5);
-    game.add
-      .tween(js)
-      .to(
-        {
-          y: h - 550,
-        },
-        300
-      )
-      .start();
-    game.add
-      .tween(js.scale)
-      .to(
-        {
-          y: 0.9,
-          x: 0.9,
-        },
-        800
-      )
-      .start();
-
-    var coin = addMovingCoin(bv + 2 * inc, h - 400, 2);
-    var t = game.add
-      .tween(coin)
-      .to(
-        {
-          x: hero.x + 100,
-          y: hero.y + 50,
-        },
-        500
-      )
-      .start();
-    t.onComplete.add(function () {
-      coin.alpha = 0;
-    });
-  } else if (explosion_count == 4) {
-    var py = game.add.sprite(bv + 3 * inc, h - 500, "party");
-    py.scale.setTo(0.5, 0.5);
-    py.anchor.setTo(0.5, 0.5);
-    game.add
-      .tween(py)
-      .to(
-        {
-          y: h - 550,
-        },
-        300
-      )
-      .start();
-    game.add
-      .tween(py.scale)
-      .to(
-        {
-          y: 0.9,
-          x: 0.9,
-        },
-        500
-      )
-      .start();
-
-    var coin = addMovingCoin(bv + 3 * inc, h - 400, 2);
-    var t = game.add
-      .tween(coin)
-      .to(
-        {
-          x: hero.x + 100,
-          y: hero.y + 50,
-        },
-        500
-      )
-      .start();
-    t.onComplete.add(function () {
-      coin.alpha = 0;
-    });
-  } else if (explosion_count == 5) {
-
-    var andro = game.add.sprite(bv + 4 * inc, h - 500, "party");
-    andro.scale.setTo(0.5, 0.5);
-    andro.anchor.setTo(0.5, 0.5);
-    game.add
-      .tween(andro)
-      .to(
-        {
-          y: h - 550,
-        },
-        300
-      )
-      .start();
-    game.add
-      .tween(andro.scale)
-      .to(
-        {
-          y: 0.9,
-          x: 0.9,
-        },
-        600
-      )
-      .start();
-    var coin = addMovingCoin(bv + 4 * inc, h - 400, 2);
-    var t = game.add
-      .tween(coin)
-      .to(
-        {
-          x: hero.x + 100,
-          y: hero.y + 50,
-        },
-        500
-      )
-      .start();
-    t.onComplete.add(function () {
-      coin.alpha = 0;
-    });
-  }
 }
 
 function fireBullet() {
@@ -1322,8 +1124,3 @@ function fileComplete(progress, cacheKey, success, totalLoaded, totalFiles) {
 function loadComplete() {
   text.setText("Load Complete");
 }
-function openResume() {
-  var win = window.open(resume_url);
-  win.focus();
-}
-
