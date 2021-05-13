@@ -90,8 +90,6 @@ function preload() {
   game.load.image("night", "assets/night.jpg");
   game.load.image("frog", "assets/frog.png");
   game.load.image("git", "assets/git.png");
-  game.load.image("scroll_2015", "assets/scroll_2015.png");
-  game.load.image("scroll_2017", "assets/scroll_2017.png");
   game.load.image("c", "assets/javalogo.png");
   game.load.image("python_logo", "assets/python.png");
   game.load.image("cpp_logo", "assets/cpp.png");
@@ -437,10 +435,6 @@ function create() {
 
   //Add hometown
   var hometown = game.add.sprite(1850, h - 415, "hometown");
-
-  //Add Scrolls
-  var scroll_2015 = game.add.sprite(3250, h - 747, "scroll_2015");
-  var scroll_2017 = game.add.sprite(3650, h - 747, "scroll_2017");
 
 
   //Add College building

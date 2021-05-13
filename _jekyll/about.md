@@ -20,7 +20,3 @@ permalink: /about/
 
 **Expected Graduation** 2022
 
-**Currently Intern at La Fondation Dassault Systemes ~ India** ~ *Feb 2021-Present*
-
-**Interests** Artificially intelligent agents based on reinforcement learning, self-improving algorithms, robotics. Besides that, I love weight training.
-
