@@ -1,78 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="stylesheet" href="static/custom/star_effect.css" type="text/css" media="screen" />
-  <link rel="manifest" href="/site.webmanifest">
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
-  <meta name="msapplication-tap-highlight" content="no">
-  <title>Arka</title>
-  <link href="./main.3f6952e4.css" rel="stylesheet"></head>
-  <body class="minimal">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
+---
+layout: default
+title: Home
+---
 
+{% if page.url == "/" %}
 
-  <header>
-    <nav class="navbar  navbar-fixed-top navbar-inverse">
-      <div class="container">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav ">
-              <li><a style="color:rgb(255, 255, 255)" href="./index.html" title="">Home</a></li>
-              <li><a style="color:rgb(255, 255, 255)" href="https://theroboticsclub.github.io/gsoc2021-Arkajyoti_Basak/" title="">Google Summer of Code 2021</a></li>
-            </ul>
-          </div>
-      </div>
-    </nav>
-  </header>
-
-  <style>
-  body {
-    background-color: #070707;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  </style>
-  <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
-  <div class="hero-full-container background-image-container white-text-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h3 style="color: #a6a1ff;">Welcome to Arka's website. He is a Mechanical Engineering undergrad at Thapar Institute of Engineering and Technology, Patiala.</h3>
-              <h3 style="color: #a6a1ff;">He as deep interest in artificially intelligent agents based on reinforcement learning, self-improving algorithms and robotics.</h3>
-              <h3 style="color: #a6a1ff;">He spends most of his day sleeping and goofing around and spends his night learning amazing things.</h3>
-              <br>
-              <h3 style="color: wheat;">FIND ME ON:</h3>
-              <h3><u><a href="https://github.com/iamarkaj">GitHub</a></u></h3>
-              <h3><u><a href="https://www.linkedin.com/in/arkajyotibasak/">LinkedIn</a></u></h3>
-              <h3><u><a href="https://www.youtube.com/channel/UCklMmADnNiheMG45RWHdgsA/videos">YouTube</a></u></h3>
-                <br>
-                <h3 style="color: wheat;">CONTACT:</h3>
-              <h3>EMAIL: arkajbasak1211 AT gmail DOT com</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
     </div>
-  </div>
-</html>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Projects</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
