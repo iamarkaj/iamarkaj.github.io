@@ -8,10 +8,8 @@ author: ajb
 
 The aim is to split a complex sentence into a meaning-preserving sequence of shorter sentences.
 
-<a href="https://github.com/iamarkaj/Split-and-Rephrase"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
 
-
-## ALGORITHM
+## OVERVIEW <a href="https://github.com/iamarkaj/Split-and-Rephrase"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
 
 
 The input sentence with more than two clauses is strategically broken into 2 sentences, each sentence having no more than 2 clauses. They are sent to the **Hugging Face's T5** pre-trained model fine-tuned with 300K sentences from websplit v1.0 dataset, to split up into multiple sentences. Each multiple sentence is further assigned a similarity score to the input sentence based on **TF-IDF Vectorizer**. The sentences with fewer similarity scores are removed.

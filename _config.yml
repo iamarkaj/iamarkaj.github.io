@@ -20,6 +20,7 @@ authors:
     avatar: 'img/profile.jpg'
     email: arkajbasak1211@gmail.com
     web: about
+    twitter: https://twitter.com/imarkajbasak
     # description: "Robotician at Thapar University"
 # Plugins
 plugins:
@@ -59,4 +60,4 @@ kramdown:
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [.sass-cache/, .jekyll-cache/, feed.xml, gemfiles/, vendor/bundle/, vendor/cache/, vendor/gems/, vendor/ruby/, changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

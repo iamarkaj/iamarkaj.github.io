@@ -9,13 +9,13 @@ author: ajb
 Created a drone controller based on Qt. Working on the drone_slam ROS package.
 
 
-<a href="https://github.com/iamarkaj/Drone-Mapping"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
+## OVERVIEW <a href="https://github.com/iamarkaj/Drone-Mapping"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
 
 
 *Work in progress!*
 
 
-## DRONE CONTROLLER VIDEO
+## DRONE CONTROLLER
 
 
 <div class="video_container">
