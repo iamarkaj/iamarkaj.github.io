@@ -1,23 +1,16 @@
 ---
 layout: post
-title: Drone-SLAM ROS Package and Qt-Controller
-image: img/dslam/octo.jpg
+title: Drone SLAM
+image: img/dslam/cover.png
 tags: [Python, ROS, Gazebo, Visual, LandmarkDetection]
 author: ajb
 ---
 
-Created a drone controller based on Qt. Working on the drone_slam ROS package.
+Developing an algorithm for autonomous navigation of drones in GPS denied environments
+using SLAM and a depth sensing camera for object avoidance. Meanwhile, checkout the drone controller based on Qt [here](https://youtube.com/embed/L2CJCvOHqHQ?mute=1)
 
 
 ## OVERVIEW <a href="https://github.com/iamarkaj/Drone-Mapping"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
 
 
 *Work in progress!*
-
-
-## DRONE CONTROLLER
-
-
-<div class="video_container">
-<iframe src="https://youtube.com/embed/L2CJCvOHqHQ?mute=1" width="1200" height="600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-</div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autonomous Vacuum Cleaner
-image: img/vacuum_cleaner/lvc.gif
+image: img/vacuum_cleaner/cover.png
 tags: [Python, ROS, Gazebo, RoboticsAcademy, PathPlanning, Exploration]
 author: ajb
 ---
@@ -28,15 +28,9 @@ Usually, coverage algorithms generate a linear, piecewise path composed of strai
 
 
 
-
 ## DECOMPOSITION ALGORITHM
 
 We can employ decomposition techniques in our algorithm, to deal with the actual coverage of the surroundings. There are a lot of decomposition techniques available for our use. The Decomposition Algorithm decomposes the map into separate segments, which our robot can cover one by one. Decomposition can be directly related to Graph Theory, where the segments are taken as nodes and the edges connecting nodes depict that the adjacent segments share a common boundary. The robot can path plan to the nearest node and then start the sweeping again!
-
-<div class="post-flex-display">
-    <img src="/img/vacuum_cleaner/lvc.gif" width="600" height="300" alt="diagram">
-</div>
-
 
 
 

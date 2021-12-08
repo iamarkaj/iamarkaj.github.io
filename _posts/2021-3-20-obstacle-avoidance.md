@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local Navigation with Virtual Force Field
-image: img/obstacle_avoidance/obstacle_avoidance_teaser.gif
+image: img/obstacle_avoidance/cover.png
 tags: [Python, ROS, Gazebo, VFF, ObstacleAvoidance]
 author: ajb
 ---

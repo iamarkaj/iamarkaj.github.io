@@ -8,8 +8,17 @@ permalink: /about
     <img src="/img/profile.jpg" width="300" alt="profile">
 </div> -->
 
-A passionate engineering student highly motivated by the work ethics of Dorian Yates, the legendary 6 times Mr. Olympia champion.
+Arkajyoti Basak is an open source robotics software developer living in Kolkata, WB, India. [he/him]
 
-This is Arkajyoti Basak, a final year Mechanical undergrad from Thapar Institute of Engineering & Technology, Patiala, India. He has a deep interest in artificially intelligent agents based on reinforcement learning, self-improving algorithms, and robotics. He spends most of his day goofing around and spends his night learning amazing things.
+**Education** <br>
+*B.E.* from TIET, Patiala [2018-2022]
 
-Feel free to get in touch via arkajbasak1211 AT gmail DOT com !
+**Open Source** <br>
+Maintainer and contributor to [jderobot/drones](https://github.com/JdeRobot/drones/tree/noetic-devel) and [RoboticsAcademy](https://github.com/JdeRobot/RoboticsAcademy) <br>
+Checkout the Lightning Talk at ROS World 2021 [here](https://youtu.be/P9ExYmjlL4E)
+
+**Email** arkajbasak1211 AT gmail DOT com<br>
+**GitHub** [@iamarkaj](https://github.com/iamarkaj/)<br>
+**Twitter** [@imarkajbasak](https://twitter.com/imarkajbasak)<br>
+**LeetCode** [@arkaxdevil](https://leetcode.com/arkaxdevil/) <br>
+**HackerRank** [@arkaj](https://www.hackerrank.com/arkaj) <br>

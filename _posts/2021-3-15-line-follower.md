@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Follow Line on Formula 1
-image: img/follow_line/follow_line_teaser.gif
+image: img/follow_line/follow_line_teaser.png
 tags: [Python, ROS, Gazebo, RoboticsAcademy, PID]
 author: ajb
 ---
@@ -25,13 +25,6 @@ Integral Controller provides a necessary action to eliminate the offset error wh
 ### Derivative
 
 Derivative Controller gives an output depending upon the rate of change or error with respect to time. It gives the kick start for the output thereby increasing system response
-
-
-<div class="post-flex-display">
-<img src="/img/follow_line/follow_line_teaser.png" width="600" height="300" alt="diagram">
-</div>
-
-
 
 
 ## TUNING METHODS
