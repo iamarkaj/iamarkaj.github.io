@@ -14,7 +14,7 @@ Arkajyoti Basak is an open source robotics software developer living in Kolkata,
 *B.E.* from TIET, Patiala [2018-2022]
 
 **Open Source** <br>
-Maintainer and contributor to [jderobot/drones](https://github.com/JdeRobot/drones/tree/noetic-devel) and [RoboticsAcademy](https://github.com/JdeRobot/RoboticsAcademy) <br>
+Contributor to [jderobot/drones](https://github.com/JdeRobot/drones/tree/noetic-devel) and [RoboticsAcademy](https://github.com/JdeRobot/RoboticsAcademy) <br>
 Checkout the Lightning Talk at ROS World 2021 [here](https://youtu.be/P9ExYmjlL4E)
 
 **Email** arkajbasak1211 AT gmail DOT com<br>
