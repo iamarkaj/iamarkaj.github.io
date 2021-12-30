@@ -3,6 +3,8 @@ layout: post
 title: Path Planning and Control
 image: img/poc/vacuum_cleaner_teaser.png
 tags: [Python, ROS, Gazebo]
+featured: true
+hidden: true
 author: ajb
 ---
 

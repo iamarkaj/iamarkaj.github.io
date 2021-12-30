@@ -3,14 +3,18 @@ layout: post
 title: EKF SLAM & UKF SLAM on Turtlebot3
 image: img/awesome_slam/cover.png
 tags: [C++, ROS, Gazebo, Kalman-Filter, SLAM]
+featured: true
+hidden: true
+customlink: true
+customlinktitle: GitHub
+customlinkaddress: https://github.com/iamarkaj/AwesomeSLAM
 author: ajb
 ---
 
 In statistics and control theory, Kalman filtering, also known as linear quadratic estimation (LQE), is an algorithm that uses a series of measurements observed over time, including statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate than those based on a single measurement alone, by estimating a joint probability distribution over the variables for each timeframe.
 
 
-## OVERVIEW <a href="https://github.com/iamarkaj/AwesomeSLAM"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
-
+## OVERVIEW
 
 #### EKF SLAM
 

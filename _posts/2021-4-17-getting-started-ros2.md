@@ -3,14 +3,17 @@ layout: post
 title: Getting Started with ROS2
 image: img/getting_started_ros2/cover.png
 tags: [Python, ROS2, Nav2, Cartographer]
+customlink: true
+customlinktitle: GitHub
+customlinkaddress: https://github.com/iamarkaj/JdeRobot-GSoC-Challenges/tree/main/ROS2%20Challenge
 author: ajb
 ---
 
 
-Publisher/Subscriber and ROS2 Navigation2 demo.
+Demo of Publisher/Subscriber and ROS2 Navigation2.
 
 
-## OVERVIEW <a href="https://github.com/iamarkaj/JdeRobot-GSoC-Challenges/tree/main/ROS2%20Challenge"><img src="https://img.shields.io/badge/GitHub-black" alt="stream" width="75" height="35"/></a>
+## OVERVIEW 
 
 
 # Part 1: Introduction to ROS2

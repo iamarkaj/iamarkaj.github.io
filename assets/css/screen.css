@@ -538,6 +538,16 @@ ul.tags li a:hover {
     display: inline-block;
 }
 
+.btn.customlink {
+    border-color: #000000;
+    color: #000000;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 999em;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
 .btn.subscribe {
     background-color: #1C9963;
     border-color: #1C9963;
