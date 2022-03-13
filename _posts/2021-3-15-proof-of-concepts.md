@@ -3,12 +3,10 @@ layout: post
 title: Path Planning and Control
 image: img/poc/vacuum_cleaner_teaser.png
 tags: [Python, ROS, Gazebo]
-featured: true
-hidden: true
 author: ajb
 ---
 
-Proof of concepts of few robotics algorithm.
+Proof of concepts of few robotics algorithm:
 
 - [Line Follower Robot - PID]({{ site.baseurl }}/line-follower)
 - [Obstacle Avoidance - Artificial Potential Field]({{ site.baseurl }}/obstacle-avoidance)

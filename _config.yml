@@ -1,7 +1,7 @@
 # Site
-name: "ARKAJYOTI BASAK"
-title: "ARKAJYOTI BASAK"
-description: "Robotics & Beyond"
+name: "Arkajyoti Basak"
+title: "Arkajyoti Basak"
+description: "AI & Robotics"
 logo: 'img/icon.png'
 favicon: 'img/icon.png'
 baseurl: "https://iamarkaj.github.io"
@@ -16,10 +16,10 @@ permalink: /:title/
 authors:
   ajb:
     name: iamarkaj
-    display_name: Arkajyoti Basak
+    display_name: Arka
     avatar: 'img/profile.jpg'
     email: arkajbasak1211 AT gmail DOT com
-    web: about
+    # web: about
     twitter: https://twitter.com/imarkajbasak
     # description: "Robotician at Thapar University"
 # Plugins
