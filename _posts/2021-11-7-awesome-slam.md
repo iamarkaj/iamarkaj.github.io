@@ -24,5 +24,5 @@ The unscented Kalman filter is a nonlinear filter based on an unscented transfor
 [1] rlabbe: [Kalman-and-Bayesian-Filters-in-Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) <br>
 [2] Circle Classification algorithm, J. Xavier et. al., Fast line, arc/circle and leg detection from laser scan data in a Player driver, ICRA 2005 <br>
 [3] Circular Fitting algorithm, A. Al-Sharadqah and N. Chernov, Error Analysis for Circle Fitting Algorithms, Electronic Journal of Statistics (2009), Volume 3 p 886-911 <br>
-[4] Udacity Sensor-fusion-engineer: [Nanodegree](https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313)
+[4] Udacity Sensor-fusion-engineer: [Nanodegree](https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313) <br>
 [5] shangzhouye: [EKF-SLAM on Turtlebot3](https://github.com/shangzhouye/EKF-SLAM-on-Turtlebot3)
